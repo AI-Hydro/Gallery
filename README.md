@@ -41,11 +41,18 @@ api/
 
 ## Contribute
 
+Start with the [new Gallery item issue template](https://github.com/AI-Hydro/Gallery/issues/new?template=new_gallery_item.md)
+if you want feedback before preparing files.
+
 1. Fork this repository.
 2. Create `items/<your-item-id>/manifest.json`.
 3. Add small local artifacts only when they are safe to host in Git. Otherwise, use stable `artifactUrl` references.
 4. Include license, citation, author, version, tags, and trust proposal.
 5. Open a pull request.
+
+Current official examples include a real NLDI Wabash basin, a multi-basin
+CONUS reference scene, a stream-order style fixture, and a watershed report
+plate template.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the manifest checklist.
 

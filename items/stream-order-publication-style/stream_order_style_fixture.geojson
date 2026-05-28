@@ -1,0 +1,113 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "class": "headwater",
+        "stream_order": 1,
+        "upstream_area_km2": 18,
+        "style_note": "thin pale blue headwater"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.99,
+            40.53
+          ],
+          [
+            -86.91,
+            40.49
+          ],
+          [
+            -86.84,
+            40.43
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "class": "tributary",
+        "stream_order": 3,
+        "upstream_area_km2": 420,
+        "style_note": "medium blue tributary"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.84,
+            40.43
+          ],
+          [
+            -86.78,
+            40.36
+          ],
+          [
+            -86.71,
+            40.29
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "class": "mainstem",
+        "stream_order": 5,
+        "upstream_area_km2": 18400,
+        "style_note": "dark wide mainstem"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.98,
+            40.21
+          ],
+          [
+            -86.84,
+            40.24
+          ],
+          [
+            -86.71,
+            40.29
+          ],
+          [
+            -86.58,
+            40.36
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "class": "mainstem",
+        "stream_order": 6,
+        "upstream_area_km2": 22600,
+        "style_note": "darkest major river"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -86.58,
+            40.36
+          ],
+          [
+            -86.48,
+            40.43
+          ],
+          [
+            -86.37,
+            40.51
+          ]
+        ]
+      }
+    }
+  ]
+}

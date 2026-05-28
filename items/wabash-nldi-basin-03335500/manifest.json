@@ -1,0 +1,26 @@
+{
+  "id": "wabash-nldi-basin-03335500",
+  "type": "dataset_connector",
+  "title": "Wabash River NLDI basin (USGS 03335500)",
+  "description": "Official example watershed polygon from the USGS NLDI basin service for Wabash River near Lafayette, Indiana. Useful for testing basin styling, labels, export plates, and source provenance.",
+  "version": "0.1.0",
+  "author": "AI-Hydro Team",
+  "license": "Public domain source data unless otherwise noted; AI-Hydro manifest metadata CC-BY-4.0",
+  "trustLevel": "official",
+  "tags": [
+    "NLDI",
+    "USGS",
+    "Wabash",
+    "watershed",
+    "CONUS",
+    "GeoJSON"
+  ],
+  "thumbnailUrl": "",
+  "githubUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/wabash-nldi-basin-03335500",
+  "artifactUrl": "https://raw.githubusercontent.com/AI-Hydro/Gallery/main/items/wabash-nldi-basin-03335500/wabash_03335500_nldi_basin.geojson",
+  "citation": "U.S. Geological Survey. Network Linked Data Index (NLDI) basin service, USGS site 03335500.",
+  "createdAt": "2026-05-28",
+  "updatedAt": "2026-05-28",
+  "isFeatured": true,
+  "importWarnings": []
+}

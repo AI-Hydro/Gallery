@@ -3,6 +3,12 @@
 Gallery entries are reviewed research map artifacts. They must be safe to load,
 traceable, and scientifically citeable.
 
+If you are not ready to prepare a pull request, open the
+[new Gallery item template](https://github.com/AI-Hydro/Gallery/issues/new?template=new_gallery_item.md)
+with your source, license, citation, and preview. Maintainers can help decide
+whether it should become a scene, style preset, dataset connector, case study,
+or map plate template.
+
 ## Required Manifest Fields
 
 ```json

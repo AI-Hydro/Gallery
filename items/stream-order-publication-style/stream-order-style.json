@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "artifactType": "ai-hydro.style-preset",
+  "target": "line",
+  "attribute": "stream_order",
+  "classes": [
+    {
+      "label": "headwater",
+      "min": 1,
+      "max": 2,
+      "color": "#7dd3fc",
+      "width": 1.2
+    },
+    {
+      "label": "tributary",
+      "min": 3,
+      "max": 4,
+      "color": "#0ea5e9",
+      "width": 2.4
+    },
+    {
+      "label": "mainstem",
+      "min": 5,
+      "max": 99,
+      "color": "#075985",
+      "width": 4.2
+    }
+  ]
+}

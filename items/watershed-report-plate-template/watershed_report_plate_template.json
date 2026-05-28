@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0",
+  "artifactType": "ai-hydro.map-plate-template",
+  "template": "report",
+  "formats": [
+    "png",
+    "pdf"
+  ],
+  "dpi": 300,
+  "page": {
+    "kind": "letter-landscape"
+  },
+  "extentStrategy": "selected-layer-or-visible-extent",
+  "elements": {
+    "legend": true,
+    "scaleBar": true,
+    "northArrow": true,
+    "attribution": true,
+    "bounds": true,
+    "provenanceFooter": true
+  },
+  "text": {
+    "title": "Watershed Delineation Map",
+    "subtitle": "AI-Hydro research plate",
+    "caption": "Watershed boundary and supporting hydrologic reference layers exported from AI-Hydro with provenance."
+  }
+}
