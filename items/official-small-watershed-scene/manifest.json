@@ -1,0 +1,18 @@
+{
+  "id": "official-small-watershed-scene",
+  "type": "map_scene",
+  "title": "Official small watershed scene",
+  "description": "Small basin polygon for testing AI-Hydro Map layer loading, fit-to-layer, styling, export, and scene persistence.",
+  "version": "0.1.0",
+  "author": "AI-Hydro Team",
+  "license": "AI-Hydro example data",
+  "trustLevel": "official",
+  "tags": ["watershed", "scene", "geojson", "example"],
+  "thumbnailUrl": "",
+  "githubUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/official-small-watershed-scene",
+  "artifactUrl": "https://raw.githubusercontent.com/AI-Hydro/Gallery/main/items/official-small-watershed-scene/sample_watershed.geojson",
+  "citation": "AI-Hydro Research Gallery official example.",
+  "createdAt": "2026-05-28",
+  "updatedAt": "2026-05-28",
+  "isFeatured": true
+}
