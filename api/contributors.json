@@ -1,10 +1,10 @@
 [
   {
-    "github": "mgalib",
+    "github": "galib9690",
     "name": "Mohammad Galib",
     "orcid": "",
     "affiliation": "Purdue University",
-    "profileUrl": "https://github.com/mgalib",
+    "profileUrl": "https://github.com/galib9690",
     "website": "",
     "linkedin": "",
     "googleScholar": "",
@@ -18,38 +18,11 @@
         "role": "author, maintainer",
         "trustLevel": "official",
         "githubUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/conus-reference-basins-scene"
-      },
-      {
-        "marketplace": "gallery",
-        "itemId": "stream-order-publication-style",
-        "title": "Publication stream-order style",
-        "type": "style_preset",
-        "role": "author, maintainer",
-        "trustLevel": "official",
-        "githubUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/stream-order-publication-style"
-      },
-      {
-        "marketplace": "gallery",
-        "itemId": "wabash-nldi-basin-03335500",
-        "title": "Wabash River NLDI basin (USGS 03335500)",
-        "type": "dataset_connector",
-        "role": "author, maintainer",
-        "trustLevel": "official",
-        "githubUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/wabash-nldi-basin-03335500"
-      },
-      {
-        "marketplace": "gallery",
-        "itemId": "watershed-report-plate-template",
-        "title": "Watershed report plate template",
-        "type": "map_plate_template",
-        "role": "author, maintainer",
-        "trustLevel": "official",
-        "githubUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/watershed-report-plate-template"
       }
     ],
     "totals": {
-      "items": 4,
-      "official": 4,
+      "items": 1,
+      "official": 1,
       "reviewed": 0,
       "community": 0,
       "local": 0,
@@ -60,8 +33,7 @@
     },
     "badges": [
       "AI-Hydro contributor",
-      "Official contributor",
-      "Gallery builder"
+      "Official contributor"
     ]
   }
 ]
