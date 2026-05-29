@@ -5,10 +5,12 @@
   "description": "A hydrology-focused line-style fixture and style preset for visualizing headwaters, tributaries, and mainstem rivers by stream order/upstream area.",
   "version": "0.1.0",
   "author": "AI-Hydro Team",
+  "authorUrl": "https://github.com/AI-Hydro",
   "contributors": [
     {
       "github": "mgalib",
       "name": "Mohammad Galib",
+      "profileUrl": "https://github.com/mgalib",
       "orcid": "",
       "affiliation": "Purdue University",
       "roles": [
@@ -30,6 +32,7 @@
   "githubUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/stream-order-publication-style",
   "artifactUrl": "https://raw.githubusercontent.com/AI-Hydro/Gallery/main/items/stream-order-publication-style/stream_order_style_fixture.geojson",
   "citation": "AI-Hydro Research Gallery style preset; stream-order styling convention derived from common hydrography cartography.",
+  "citationUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/stream-order-publication-style",
   "badges": [
     "Official",
     "Citation-ready"

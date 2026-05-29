@@ -141,6 +141,7 @@ def normalize_contributors(item: dict[str, Any]) -> list[dict[str, Any]]:
             {
                 "github": github,
                 "name": item.get("author", ""),
+                "profileUrl": item.get("authorUrl", ""),
                 "orcid": item.get("orcid", ""),
                 "affiliation": item.get("affiliation", ""),
                 "roles": ["author"],
@@ -158,6 +159,19 @@ def normalize_contributors(item: dict[str, Any]) -> list[dict[str, Any]]:
                 "name": str(contributor.get("name") or contributor.get("github") or "Unknown contributor").strip(),
                 "orcid": str(contributor.get("orcid") or "").strip(),
                 "affiliation": str(contributor.get("affiliation") or "").strip(),
+                "profileUrl": str(
+                    contributor.get("profileUrl")
+                    or contributor.get("profile_url")
+                    or contributor.get("url")
+                    or contributor.get("website")
+                    or ""
+                ).strip(),
+                "website": str(contributor.get("website") or "").strip(),
+                "linkedin": str(contributor.get("linkedin") or contributor.get("linkedinUrl") or "").strip(),
+                "googleScholar": str(
+                    contributor.get("googleScholar") or contributor.get("google_scholar") or contributor.get("scholar") or ""
+                ).strip(),
+                "citationUrl": str(contributor.get("citationUrl") or contributor.get("citation_url") or "").strip(),
                 "roles": roles,
             }
         )
@@ -202,6 +216,8 @@ def build() -> None:
         item.setdefault("thumbnailUrl", "")
         item.setdefault("artifactUrl", "")
         item.setdefault("githubUrl", f"https://github.com/AI-Hydro/Gallery/tree/main/items/{item_id}")
+        item.setdefault("authorUrl", "")
+        item.setdefault("citationUrl", "")
         item.setdefault("createdAt", now)
         item["updatedAt"] = now
         item.setdefault("isFeatured", False)
@@ -247,6 +263,11 @@ def build() -> None:
                     "name": contributor.get("name", ""),
                     "orcid": contributor.get("orcid", ""),
                     "affiliation": contributor.get("affiliation", ""),
+                    "profileUrl": contributor.get("profileUrl", ""),
+                    "website": contributor.get("website", ""),
+                    "linkedin": contributor.get("linkedin", ""),
+                    "googleScholar": contributor.get("googleScholar", ""),
+                    "citationUrl": contributor.get("citationUrl", ""),
                     "contributions": [],
                     "totals": {
                         "items": 0,

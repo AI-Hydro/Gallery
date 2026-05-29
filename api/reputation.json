@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAtUtc": "2026-05-29T05:24:13.652581+00:00",
+  "generatedAtUtc": "2026-05-29T19:12:31.433933+00:00",
   "marketplace": "gallery",
   "metricsSource": "github-native",
   "items": [
@@ -15,6 +15,11 @@
           "name": "Mohammad Galib",
           "orcid": "",
           "affiliation": "Purdue University",
+          "profileUrl": "https://github.com/mgalib",
+          "website": "",
+          "linkedin": "",
+          "googleScholar": "",
+          "citationUrl": "",
           "roles": [
             "author",
             "maintainer"
@@ -44,6 +49,11 @@
           "name": "Mohammad Galib",
           "orcid": "",
           "affiliation": "Purdue University",
+          "profileUrl": "https://github.com/mgalib",
+          "website": "",
+          "linkedin": "",
+          "googleScholar": "",
+          "citationUrl": "",
           "roles": [
             "author",
             "maintainer"
@@ -73,6 +83,11 @@
           "name": "Mohammad Galib",
           "orcid": "",
           "affiliation": "Purdue University",
+          "profileUrl": "https://github.com/mgalib",
+          "website": "",
+          "linkedin": "",
+          "googleScholar": "",
+          "citationUrl": "",
           "roles": [
             "author",
             "maintainer"
@@ -102,6 +117,11 @@
           "name": "Mohammad Galib",
           "orcid": "",
           "affiliation": "Purdue University",
+          "profileUrl": "https://github.com/mgalib",
+          "website": "",
+          "linkedin": "",
+          "googleScholar": "",
+          "citationUrl": "",
           "roles": [
             "author",
             "maintainer"
@@ -127,6 +147,11 @@
       "name": "Mohammad Galib",
       "orcid": "",
       "affiliation": "Purdue University",
+      "profileUrl": "https://github.com/mgalib",
+      "website": "",
+      "linkedin": "",
+      "googleScholar": "",
+      "citationUrl": "",
       "contributions": [
         {
           "marketplace": "gallery",

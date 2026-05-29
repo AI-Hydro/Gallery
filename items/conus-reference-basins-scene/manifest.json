@@ -5,10 +5,12 @@
   "description": "Three real USGS/NLDI basin polygons arranged as a reusable AI-Hydro map scene for comparing basin size, styling, labels, and research plate export behavior.",
   "version": "0.1.0",
   "author": "AI-Hydro Team",
+  "authorUrl": "https://github.com/AI-Hydro",
   "contributors": [
     {
       "github": "mgalib",
       "name": "Mohammad Galib",
+      "profileUrl": "https://github.com/mgalib",
       "orcid": "",
       "affiliation": "Purdue University",
       "roles": [
@@ -31,6 +33,7 @@
   "githubUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/conus-reference-basins-scene",
   "artifactUrl": "https://raw.githubusercontent.com/AI-Hydro/Gallery/main/items/conus-reference-basins-scene/conus_reference_basins.aihydro-map.json",
   "citation": "U.S. Geological Survey. Network Linked Data Index (NLDI) basin service for USGS sites 03335500, 01491000, and 05427927.",
+  "citationUrl": "https://labs.waterdata.usgs.gov/about-nldi/",
   "badges": [
     "Official",
     "Citation-ready"

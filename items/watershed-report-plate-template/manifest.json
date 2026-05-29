@@ -5,10 +5,12 @@
   "description": "A 300 DPI Letter landscape report-plate preset for watershed maps, including legend, scale bar, north arrow, bounds, attribution, and provenance footer.",
   "version": "0.1.0",
   "author": "AI-Hydro Team",
+  "authorUrl": "https://github.com/AI-Hydro",
   "contributors": [
     {
       "github": "mgalib",
       "name": "Mohammad Galib",
+      "profileUrl": "https://github.com/mgalib",
       "orcid": "",
       "affiliation": "Purdue University",
       "roles": [
@@ -30,6 +32,7 @@
   "githubUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/watershed-report-plate-template",
   "artifactUrl": "https://raw.githubusercontent.com/AI-Hydro/Gallery/main/items/watershed-report-plate-template/watershed_report_plate_template.json",
   "citation": "AI-Hydro Research Gallery map plate template.",
+  "citationUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/watershed-report-plate-template",
   "badges": [
     "Official",
     "Citation-ready"
