@@ -7,6 +7,12 @@ studies, and map plate templates that can be inspected, cited, imported, and
 reused inside the AI-Hydro Map. It is not a code execution marketplace and it is
 not a replacement for AI-Hydro Modules, Skills, or MCP tools.
 
+The catalog includes a GitHub-native contributor recognition layer. Item
+manifests credit contributors directly; the build workflow publishes
+`api/contributors.json` and `api/reputation.json` with badges and public GitHub
+signals such as repository stars, release asset downloads, and issue/PR
+reactions when those URLs are provided.
+
 ## Browse in AI-Hydro
 
 Open **AI-Hydro Map** and click the **Research Gallery** ribbon button. The
@@ -27,6 +33,8 @@ items/
     artifact files or source references
 api/
   gallery.json
+  contributors.json
+  reputation.json
 .github/workflows/
   build-api.yml
 ```
@@ -47,7 +55,7 @@ if you want feedback before preparing files.
 1. Fork this repository.
 2. Create `items/<your-item-id>/manifest.json`.
 3. Add small local artifacts only when they are safe to host in Git. Otherwise, use stable `artifactUrl` references.
-4. Include license, citation, author, version, tags, and trust proposal.
+4. Include license, citation, contributors, author, version, tags, and trust proposal.
 5. Open a pull request.
 
 Current official examples include a real NLDI Wabash basin, a multi-basin

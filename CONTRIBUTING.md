@@ -19,13 +19,25 @@ or map plate template.
   "description": "What this imports and why it is useful.",
   "version": "0.1.0",
   "author": "Name or lab",
+  "contributors": [
+    {
+      "github": "username",
+      "name": "Full Name",
+      "orcid": "",
+      "affiliation": "",
+      "roles": ["author", "maintainer"]
+    }
+  ],
   "license": "CC-BY-4.0",
   "trustLevel": "community",
   "tags": ["watershed", "style"],
   "thumbnailUrl": "",
   "githubUrl": "",
   "artifactUrl": "",
+  "discussionUrl": "",
+  "releaseAssetUrl": "",
   "citation": "Dataset or method citation.",
+  "badges": [],
   "createdAt": "2026-05-28",
   "updatedAt": "2026-05-28",
   "isFeatured": false
@@ -55,6 +67,22 @@ Allowed `trustLevel` values:
 - Large assets are referenced by URL, not committed directly.
 - Any limitations or warnings are included in `importWarnings`.
 - Dataset source and provenance are described in the item README.
+
+## Contributor Recognition
+
+The Gallery uses GitHub-native recognition, not fake points. The build workflow
+generates:
+
+- `api/gallery.json` — import catalog with item-level metrics and badges.
+- `api/contributors.json` — public contributor profiles aggregated from manifests.
+- `api/reputation.json` — item and contributor recognition summary for AI-Hydro UI.
+
+Optional fields improve recognition:
+
+- `discussionUrl` — GitHub issue or pull request used to count public reactions.
+- `releaseAssetUrl` — GitHub release asset URL used to count real downloads.
+- `contributors[].orcid` — researcher identity where available.
+- `contributors[].affiliation` — lab or institution credit.
 
 ## Static API
 

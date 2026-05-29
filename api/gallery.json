@@ -6,6 +6,18 @@
     "description": "Three real USGS/NLDI basin polygons arranged as a reusable AI-Hydro map scene for comparing basin size, styling, labels, and research plate export behavior.",
     "version": "0.1.0",
     "author": "AI-Hydro Team",
+    "contributors": [
+      {
+        "github": "mgalib",
+        "name": "Mohammad Galib",
+        "orcid": "",
+        "affiliation": "Purdue University",
+        "roles": [
+          "author",
+          "maintainer"
+        ]
+      }
+    ],
     "license": "Public domain source data unless otherwise noted; AI-Hydro manifest metadata CC-BY-4.0",
     "trustLevel": "official",
     "tags": [
@@ -20,14 +32,27 @@
     "githubUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/conus-reference-basins-scene",
     "artifactUrl": "https://raw.githubusercontent.com/AI-Hydro/Gallery/main/items/conus-reference-basins-scene/conus_reference_basins.aihydro-map.json",
     "citation": "U.S. Geological Survey. Network Linked Data Index (NLDI) basin service for USGS sites 03335500, 01491000, and 05427927.",
+    "badges": [
+      "Official",
+      "Citation-ready"
+    ],
     "createdAt": "2026-05-28",
-    "updatedAt": "2026-05-28",
+    "updatedAt": "2026-05-29",
     "isFeatured": true,
     "importWarnings": [],
     "isInstalled": false,
+    "discussionUrl": "",
+    "releaseAssetUrl": "",
+    "metrics": {
+      "installs": 0,
+      "downloads": 0,
+      "githubStars": 0,
+      "githubForks": 0,
+      "reactions": 0
+    },
     "downloadCount": 0,
     "githubReactions": 0,
-    "discussionUrl": ""
+    "githubStars": 0
   },
   {
     "id": "stream-order-publication-style",
@@ -36,6 +61,18 @@
     "description": "A hydrology-focused line-style fixture and style preset for visualizing headwaters, tributaries, and mainstem rivers by stream order/upstream area.",
     "version": "0.1.0",
     "author": "AI-Hydro Team",
+    "contributors": [
+      {
+        "github": "mgalib",
+        "name": "Mohammad Galib",
+        "orcid": "",
+        "affiliation": "Purdue University",
+        "roles": [
+          "author",
+          "maintainer"
+        ]
+      }
+    ],
     "license": "Public domain source data unless otherwise noted; AI-Hydro manifest metadata CC-BY-4.0",
     "trustLevel": "official",
     "tags": [
@@ -49,16 +86,29 @@
     "githubUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/stream-order-publication-style",
     "artifactUrl": "https://raw.githubusercontent.com/AI-Hydro/Gallery/main/items/stream-order-publication-style/stream_order_style_fixture.geojson",
     "citation": "AI-Hydro Research Gallery style preset; stream-order styling convention derived from common hydrography cartography.",
+    "badges": [
+      "Official",
+      "Citation-ready"
+    ],
     "createdAt": "2026-05-28",
-    "updatedAt": "2026-05-28",
+    "updatedAt": "2026-05-29",
     "isFeatured": true,
     "importWarnings": [
       "Imports a small style-fixture GeoJSON now; the companion stream-order-style.json documents the intended symbology preset."
     ],
     "isInstalled": false,
+    "discussionUrl": "",
+    "releaseAssetUrl": "",
+    "metrics": {
+      "installs": 0,
+      "downloads": 0,
+      "githubStars": 0,
+      "githubForks": 0,
+      "reactions": 0
+    },
     "downloadCount": 0,
     "githubReactions": 0,
-    "discussionUrl": ""
+    "githubStars": 0
   },
   {
     "id": "wabash-nldi-basin-03335500",
@@ -67,6 +117,18 @@
     "description": "Official example watershed polygon from the USGS NLDI basin service for Wabash River near Lafayette, Indiana. Useful for testing basin styling, labels, export plates, and source provenance.",
     "version": "0.1.0",
     "author": "AI-Hydro Team",
+    "contributors": [
+      {
+        "github": "mgalib",
+        "name": "Mohammad Galib",
+        "orcid": "",
+        "affiliation": "Purdue University",
+        "roles": [
+          "author",
+          "maintainer"
+        ]
+      }
+    ],
     "license": "Public domain source data unless otherwise noted; AI-Hydro manifest metadata CC-BY-4.0",
     "trustLevel": "official",
     "tags": [
@@ -81,14 +143,27 @@
     "githubUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/wabash-nldi-basin-03335500",
     "artifactUrl": "https://raw.githubusercontent.com/AI-Hydro/Gallery/main/items/wabash-nldi-basin-03335500/wabash_03335500_nldi_basin.geojson",
     "citation": "U.S. Geological Survey. Network Linked Data Index (NLDI) basin service, USGS site 03335500.",
+    "badges": [
+      "Official",
+      "Citation-ready"
+    ],
     "createdAt": "2026-05-28",
-    "updatedAt": "2026-05-28",
+    "updatedAt": "2026-05-29",
     "isFeatured": true,
     "importWarnings": [],
     "isInstalled": false,
+    "discussionUrl": "",
+    "releaseAssetUrl": "",
+    "metrics": {
+      "installs": 0,
+      "downloads": 0,
+      "githubStars": 0,
+      "githubForks": 0,
+      "reactions": 0
+    },
     "downloadCount": 0,
     "githubReactions": 0,
-    "discussionUrl": ""
+    "githubStars": 0
   },
   {
     "id": "watershed-report-plate-template",
@@ -97,6 +172,18 @@
     "description": "A 300 DPI Letter landscape report-plate preset for watershed maps, including legend, scale bar, north arrow, bounds, attribution, and provenance footer.",
     "version": "0.1.0",
     "author": "AI-Hydro Team",
+    "contributors": [
+      {
+        "github": "mgalib",
+        "name": "Mohammad Galib",
+        "orcid": "",
+        "affiliation": "Purdue University",
+        "roles": [
+          "author",
+          "maintainer"
+        ]
+      }
+    ],
     "license": "Public domain source data unless otherwise noted; AI-Hydro manifest metadata CC-BY-4.0",
     "trustLevel": "official",
     "tags": [
@@ -110,13 +197,26 @@
     "githubUrl": "https://github.com/AI-Hydro/Gallery/tree/main/items/watershed-report-plate-template",
     "artifactUrl": "https://raw.githubusercontent.com/AI-Hydro/Gallery/main/items/watershed-report-plate-template/watershed_report_plate_template.json",
     "citation": "AI-Hydro Research Gallery map plate template.",
+    "badges": [
+      "Official",
+      "Citation-ready"
+    ],
     "createdAt": "2026-05-28",
-    "updatedAt": "2026-05-28",
+    "updatedAt": "2026-05-29",
     "isFeatured": true,
     "importWarnings": [],
     "isInstalled": false,
+    "discussionUrl": "",
+    "releaseAssetUrl": "",
+    "metrics": {
+      "installs": 0,
+      "downloads": 0,
+      "githubStars": 0,
+      "githubForks": 0,
+      "reactions": 0
+    },
     "downloadCount": 0,
     "githubReactions": 0,
-    "discussionUrl": ""
+    "githubStars": 0
   }
 ]

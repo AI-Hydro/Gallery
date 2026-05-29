@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'items/**'
+      - 'scripts/build_gallery_api.py'
       - '.github/workflows/build-api.yml'
   workflow_dispatch:
 
@@ -23,82 +24,17 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Build api/gallery.json from manifests
+      - name: Build Gallery API from manifests
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python3 - <<'EOF'
-          import glob
-          import json
-          import os
-          from datetime import datetime, timezone
+          python3 scripts/build_gallery_api.py
 
-          allowed_types = {
-              "map_scene",
-              "style_preset",
-              "dataset_connector",
-              "case_study",
-              "map_plate_template",
-          }
-          allowed_trust = {"official", "reviewed", "community", "local"}
-          required = [
-              "id",
-              "type",
-              "title",
-              "description",
-              "version",
-              "author",
-              "license",
-              "trustLevel",
-              "tags",
-              "citation",
-          ]
-
-          now = datetime.now(timezone.utc).date().isoformat()
-          items = []
-          errors = []
-          for manifest_path in sorted(glob.glob("items/**/manifest.json", recursive=True)):
-              with open(manifest_path, encoding="utf-8") as f:
-                  item = json.load(f)
-              item_id = item.get("id") or os.path.basename(os.path.dirname(manifest_path))
-              item["id"] = item_id
-              missing = [field for field in required if not item.get(field)]
-              if missing:
-                  errors.append(f"{manifest_path}: missing {', '.join(missing)}")
-              if item.get("type") not in allowed_types:
-                  errors.append(f"{manifest_path}: invalid type {item.get('type')}")
-              if item.get("trustLevel") not in allowed_trust:
-                  errors.append(f"{manifest_path}: invalid trustLevel {item.get('trustLevel')}")
-              if not isinstance(item.get("tags"), list):
-                  errors.append(f"{manifest_path}: tags must be a list")
-
-              item.setdefault("thumbnailUrl", "")
-              item.setdefault("artifactUrl", "")
-              item.setdefault("githubUrl", f"https://github.com/AI-Hydro/Gallery/tree/main/items/{item_id}")
-              item.setdefault("createdAt", now)
-              item["updatedAt"] = now
-              item.setdefault("isFeatured", False)
-              item.setdefault("isInstalled", False)
-              item.setdefault("downloadCount", 0)
-              item.setdefault("githubReactions", 0)
-              item.setdefault("discussionUrl", "")
-              item.setdefault("importWarnings", [])
-              items.append(item)
-
-          if errors:
-              print("\n".join(errors))
-              raise SystemExit(1)
-
-          os.makedirs("api", exist_ok=True)
-          with open("api/gallery.json", "w", encoding="utf-8") as f:
-              json.dump(items, f, indent=2)
-              f.write("\n")
-          print(f"Wrote api/gallery.json with {len(items)} item(s)")
-          EOF
-
-      - name: Commit api/gallery.json
+      - name: Commit generated API files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add api/gallery.json
+          git add api/gallery.json api/contributors.json api/reputation.json
           if git diff --staged --quiet; then
             echo "No catalog changes"
           else
