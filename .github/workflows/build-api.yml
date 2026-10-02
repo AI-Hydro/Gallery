@@ -6,6 +6,7 @@ on:
     paths:
       - 'items/**'
       - 'scripts/build_gallery_api.py'
+      - 'scripts/certify_manifests.py'
       - '.github/workflows/build-api.yml'
   workflow_dispatch:
 
@@ -29,6 +30,47 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 scripts/build_gallery_api.py
+
+      - name: Certify manifests and inject into API (Phase 3.3)
+        run: |
+          python3 - <<'EOF'
+          import json, sys, glob
+          from datetime import datetime, timezone
+          sys.path.insert(0, "scripts")
+          from certify_manifests import certify_manifest
+
+          today = datetime.now(timezone.utc).date().isoformat()
+
+          # Build certification records keyed by item id
+          certs = {}
+          for path in sorted(glob.glob("items/*/manifest.json")):
+              with open(path) as f:
+                  m = json.load(f)
+              item_id = m.get("id", "")
+              cert = certify_manifest(m, certified_at=today)
+              certs[item_id] = cert
+              status = "PASS" if cert["certified"] else "FAIL"
+              print(f"  {status}  {item_id}")
+              for reason in cert.get("checks_failed", []):
+                  print(f"       - {reason}")
+
+          # Inject into generated API JSON
+          api_path = "api/gallery.json"
+          with open(api_path) as f:
+              gallery = json.load(f)
+
+          items = gallery.get("items", gallery) if isinstance(gallery, dict) else gallery
+          for item in items:
+              item_id = item.get("id", "")
+              if item_id in certs:
+                  item["certification"] = certs[item_id]
+
+          with open(api_path, "w") as f:
+              json.dump(gallery, f, indent=2)
+
+          n_certified = sum(1 for c in certs.values() if c["certified"])
+          print(f"\n{n_certified}/{len(certs)} items certified")
+          EOF
 
       - name: Commit generated API files
         run: |
